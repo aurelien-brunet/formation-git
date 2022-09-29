@@ -24,7 +24,7 @@ public class EmployeResolver implements HandlerMethodArgumentResolver {
 	public Object resolveArgument(MethodParameter parameter, ModelAndViewContainer mavContainer, NativeWebRequest webRequest, WebDataBinderFactory binderFactory) throws Exception {
 		HttpServletRequest request = (HttpServletRequest) webRequest.getNativeRequest();
 		HttpSession session = request.getSession(true);
-		return session.getAttribute("salarie");
+		return session.getAttribute("employe");
 	}
 
 }
